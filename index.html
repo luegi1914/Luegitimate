@@ -3,214 +3,370 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luegitimate | Marketing • Communications • Youth Development</title>
+<title>Luegitimate | Professional Portfolio</title>
 
 <style>
+:root{
+--primary:#0f172a;
+--secondary:#1e40af;
+--accent:#3b82f6;
+--light:#f8fafc;
+--text:#1e293b;
+--card:#ffffff;
+}
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Inter, Arial, sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f5f7fb;
-color:#222;
-line-height:1.6;
+background:var(--light);
+color:var(--text);
+line-height:1.7;
 }
 
-header{
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(15,23,42,.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav h2{
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:.95rem;
+}
+
+.hero{
 background:linear-gradient(135deg,#0f172a,#2563eb);
 color:white;
-padding:100px 20px;
+padding:140px 20px 100px;
 text-align:center;
 }
 
-header h1{
+.profile{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid rgba(255,255,255,.2);
+margin-bottom:20px;
+}
+
+.hero h1{
 font-size:4rem;
 margin-bottom:10px;
 }
 
-header p{
-font-size:1.2rem;
-opacity:.9;
+.hero p{
+font-size:1.15rem;
+max-width:800px;
+margin:auto;
+opacity:.95;
 }
 
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:12px 24px;
+margin-top:25px;
+padding:14px 28px;
 background:white;
 color:#2563eb;
+font-weight:700;
 text-decoration:none;
-border-radius:8px;
-font-weight:bold;
+border-radius:10px;
 }
 
 section{
-max-width:1100px;
+max-width:1200px;
 margin:auto;
-padding:70px 20px;
+padding:90px 20px;
 }
 
-h2{
-margin-bottom:20px;
-color:#0f172a;
+.section-title{
+font-size:2.2rem;
+margin-bottom:30px;
+text-align:center;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,.08);
-margin-bottom:20px;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.timeline{
+display:grid;
 gap:20px;
+}
+
+.timeline .card{
+border-left:5px solid var(--accent);
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+}
+
+.skill{
+background:#dbeafe;
+padding:10px 18px;
+border-radius:50px;
+font-weight:600;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
 }
 
 .gallery img{
 width:100%;
-height:250px;
+height:320px;
 object-fit:cover;
-border-radius:10px;
+border-radius:16px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.contact{
+text-align:center;
 }
 
 footer{
 background:#0f172a;
 color:white;
 text-align:center;
-padding:30px;
-margin-top:40px;
+padding:40px 20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+nav{
+display:none;
+}
 }
 </style>
 </head>
 
 <body>
 
-<header>
+<nav>
+<h2>Luegitimate</h2>
+
+<div>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+
+<img src="profile.png" alt="Profile" class="profile">
+
 <h1>Luegitimate</h1>
-<p>Marketing • Communications • Content Creation • Youth Development</p>
-<a href="#about" class="btn">Explore My Work</a>
-</header>
+
+<p>
+Marketing Management Student • Content Writer • Youth Development Practitioner
+</p>
+
+<a class="btn" href="Luegi Vincent Mancao Resume.pdf" target="_blank">
+View CV
+</a>
+
+</section>
 
 <section id="about">
-<h2>About Me</h2>
+
+<h2 class="section-title">About Me</h2>
+
 <div class="card">
-<p>
-I'm Luegi, a Marketing Management student and youth development practitioner passionate about communication, leadership, audience engagement, and meaningful community impact.
-</p>
 
 <p>
-My experience includes content writing, organizational communications, youth leadership initiatives, event promotion, advocacy campaigns, stakeholder engagement, and digital communication projects.
+I am passionate about marketing communications, content creation, leadership development, and youth empowerment. My experience spans organizational communications, advocacy initiatives, event promotion, stakeholder engagement, community development, and audience-focused storytelling.
+</p>
+
+<br>
+
+<p>
+Through academic, organizational, and community-based experiences, I continue to develop skills in communication, project management, digital engagement, leadership, and strategic marketing.
+</p>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="section-title">Experience & Leadership</h2>
+
+<div class="timeline">
+
+<div class="card">
+<h3>Youth Development & Leadership</h3>
+<p>
+Led and supported initiatives focused on community engagement, youth empowerment, leadership development, volunteer participation, and organizational growth.
 </p>
 </div>
+
+<div class="card">
+<h3>Content Writing & Communications</h3>
+<p>
+Created articles, newsletters, feature stories, event promotions, organizational updates, and audience-focused communication materials.
+</p>
+</div>
+
+<div class="card">
+<h3>Marketing & Digital Engagement</h3>
+<p>
+Developed promotional content, awareness campaigns, social media initiatives, and stakeholder engagement activities designed to strengthen participation and visibility.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Content Writing</div>
+<div class="skill">Marketing Communications</div>
+<div class="skill">Digital Marketing</div>
+<div class="skill">Leadership</div>
+<div class="skill">Project Management</div>
+<div class="skill">Community Engagement</div>
+<div class="skill">Public Speaking</div>
+<div class="skill">Stakeholder Relations</div>
+<div class="skill">Event Management</div>
+<div class="skill">Social Media</div>
+
+</div>
+
 </section>
 
 <section>
-<h2>Core Strengths</h2>
+
+<h2 class="section-title">Writing Portfolio</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Content Writing</h3>
+<h3>Articles & Features</h3>
 <p>
-Articles, newsletters, organizational content, feature stories, and audience-focused communications.
+Add article links, publication samples, feature stories, and organizational content here.
 </p>
 </div>
 
 <div class="card">
-<h3>Marketing Communications</h3>
+<h3>Newsletters & Campaigns</h3>
 <p>
-Brand messaging, campaign promotion, social media content, and digital engagement.
+Showcase newsletters, awareness campaigns, promotional materials, and communication projects.
 </p>
 </div>
 
 <div class="card">
-<h3>Youth Development</h3>
+<h3>Marketing Projects</h3>
 <p>
-Leadership training, community engagement, volunteer coordination, and project implementation.
+Present academic projects, marketing plans, content strategies, and audience engagement initiatives.
 </p>
 </div>
 
-</div>
-</section>
-
-<section>
-<h2>Featured Experience</h2>
-
-<div class="card">
-<h3>Communications & Storytelling</h3>
-<p>
-Developed communication materials designed to strengthen engagement, participation, and awareness among target audiences.
-</p>
-</div>
-
-<div class="card">
-<h3>Marketing & Audience Engagement</h3>
-<p>
-Created promotional content and outreach initiatives supporting organizational goals and public participation.
-</p>
-</div>
-
-<div class="card">
-<h3>Leadership & Community Impact</h3>
-<p>
-Supported programs and initiatives focused on youth empowerment, leadership development, and community service.
-</p>
 </div>
 
 </section>
 
-<section>
-<h2>Portfolio Gallery</h2>
+<section id="gallery">
 
-<p style="margin-bottom:20px;">
-Replace these images with your own photos, projects, certificates, events, or portfolio work.
-</p>
+<h2 class="section-title">Gallery</h2>
 
 <div class="gallery">
-<img src="https://picsum.photos/500?1">
-<img src="https://picsum.photos/500?2">
-<img src="https://picsum.photos/500?3">
-<img src="https://picsum.photos/500?4">
+
+<img src="Event1.jpg" alt="Event">
+
+<img src="Event 2.jpg" alt="Event">
+
 </div>
 
 </section>
 
-<section>
-<h2>Writing Portfolio</h2>
+<section id="contact">
 
-<div class="card">
+<h2 class="section-title">Contact</h2>
+
+<div class="card contact">
+
+<h3>Let's Connect</h3>
+
 <p>
-Add article links, publication samples, newsletters, LinkedIn articles, blog posts, or marketing projects here.
+Interested in collaboration, leadership initiatives, content writing, or marketing projects?
 </p>
-</div>
 
-</section>
+<br>
 
-<section>
-<h2>Contact</h2>
+<p>
+Add your email, LinkedIn, Facebook, and other professional links here.
+</p>
 
-<div class="card">
-<p>Email: your@email.com</p>
-<p>LinkedIn: Add your profile</p>
-<p>Facebook: Add your profile</p>
+<br>
+
+<a class="btn" href="Luegi Vincent Mancao Resume.pdf" target="_blank">
+View CV
+</a>
+
 </div>
 
 </section>
 
 <footer>
-<p>© 2026 Luegitimate. All Rights Reserved.</p>
+
+<h3>Luegitimate</h3>
+
+<p>
+Building impact through leadership, communication, and meaningful engagement.
+</p>
+
+<br>
+
+<p>
+© 2026 Luegi Vincent Mancao. All Rights Reserved.
+</p>
+
 </footer>
 
 </body>
